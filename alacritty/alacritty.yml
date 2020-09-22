@@ -1,37 +1,33 @@
 window:
   padding:
-    x: 30
-    y: 30
-# Colors (Base16 Default Dark)
+    x: 16
+    y: 16
+
 colors:
-  # Default colors
   primary:
-    background: '0x181818'
-    foreground: '0xd8d8d8'
+    background: '0x0d0d0e'
+    foreground: '0xe3cbd7'
 
-  # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0xd8d8d8'
-    cursor: '0xd8d8d8'
+    text: '0xe3cbd7'
+    cursor: '0xe3cbd7'
 
-  # Normal colors
   normal:
     black:   '0x181818'
-    red:     '0xab4642'
-    green:   '0xa1b56c'
-    yellow:  '0xf7ca88'
-    blue:    '0x7cafc2'
-    magenta: '0xba8baf'
+    red:     '0xD46493'
+    green:   '0x5A595C'
+    yellow:  '0x473F46'
+    blue:    '0x767E89'
+    magenta: '0xA83B5F'
     cyan:    '0x86c1b9'
-    white:   '0xd8d8d8'
+    white:   '0xe3cbd7'
 
-  # Bright colors
   bright:
-    black:   '0x585858'
-    red:     '0xab4642'
-    green:   '0xa1b56c'
-    yellow:  '0xf7ca88'
-    blue:    '0x7cafc2'
-    magenta: '0xba8baf'
+    black:   '0xe3cbd7'
+    red:     '0xD46493'
+    green:   '0x5A595C'
+    yellow:  '0x473F46'
+    blue:    '0x767E89'
+    magenta: '0xA83B5F'
     cyan:    '0x86c1b9'
-    white:   '0xf8f8f8'
+    white:   '0xe3cbd7'  

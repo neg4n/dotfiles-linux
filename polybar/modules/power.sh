@@ -1,9 +1,9 @@
 #!/bin/bash
 
-background_color="#000000"
+background_color="#0d0d0e"
 highlight_background="#070707"
 foreground_color="#ffffff"
-active_color="#cd2563"
+active_color="#D46493"
 
 power="$(
   rofi -no-lazy-grab -sep "|" -dmenu -i -p 'Select' \
