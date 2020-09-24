@@ -26,8 +26,8 @@ font pango:monospace 8
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
-exec_always --no-startup-id feh --bg-scale $HOME/.config/i3/city.jpg
-exec_always --no-startup-id picom --respect-prop-shadow --config $HOME/.config/picom/picom.conf
+exec_always --no-startup-id feh --bg-tile $HOME/.config/i3/solid.png
+exec_always --no-startup-id picom --experimental-backends --config $HOME/.config/picom/picom.conf
 exec_always $HOME/.config/polybar/launch.sh
 exec_always flameshot
 bindsym Print exec flameshot gui
@@ -46,10 +46,20 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-gaps inner 8
-gaps outer 8
-for_window [class="^.*"] border pixel 0
-border_radius 8
+# i3 colors
+# class                 border  backgr. text indicator child_border
+client.focused          #202020 #181818 #fffff #202020   #202020
+client.focused_inactive #202020 #181818 #ffffff #202020   #202020
+client.unfocused        #202020 #181818 #ffffff #202020   #202020
+client.urgent           #202020 #181818 #ffffff #202020   #202020
+client.placeholder      #202020 #181818 #ffffff #202020   #202020
+
+client.background       #202020
+
+# gaps settings
+for_window [class=".*"] border pixel 4
+gaps inner 12
+gaps outer 2
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal

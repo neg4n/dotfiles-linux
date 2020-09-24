@@ -7,8 +7,8 @@ for all these programs but (most likely) there will be one soon...
  - [flameshot](https://github.com/flameshot-org/flameshot)
  - [polybar](https://github.com/polybar/polybar)
  - [rofi](https://github.com/davatorium/rofi)
- - [i3-gaps](https://github.com/resloved/i3)
- - [picom](https://github.com/ibhagwan/picom)
+ - [i3-gaps](https://github.com/Airblader/i3)
+ - [picom](https://github.com/yshui/picom)
 
 ### Extracting
 Simply launch `./extract.sh` to overwrite all the configuration directories  
